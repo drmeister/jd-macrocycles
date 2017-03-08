@@ -1,19 +1,11 @@
-;;;
-;;; Initialize everything
-;;;
-
-(setf asdf:*user-cache* "/src/.cache/")
-(load "/root/quicklisp/setup.lisp")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Work with the structures
 ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq *default-pathname-defaults* (pathname "/src/"))
-
 (progn
-  (setq *default-pathname-defaults* (pathname "/src/"))
+  (setf *default-pathname-defaults* (pathname "/src/cando/jd-macrocycles/"))
   (defparameter *cd*
     (with-open-file
         (fin (probe-file "macro1.cdxml") :direction :input)
@@ -32,23 +24,11 @@
 				      (format t "Set atom ~a to :S~%" (chem:get-name a))))
 		    *agg*)))
 
-(defparameter *fix-atoms*
-  (sort (select:atoms-with-property *agg* :fix) #'string<
-	:key (lambda (a) (string (getf (chem:properties a) :fix)))))
-
-(progn
-  (defparameter *fix-points* (anchor:circle-points 40 (length *fix-atoms*)))
-;;; Anchor the :fix atoms to *fixed-points*
-  (anchor:on-points *fix-atoms* *fix-points*))
-
-
 (defparameter *ff* (energy:setup-amber))
 
 (cando:jostle *agg* 40)
 
 (energy:minimize *agg* :force-field *ff* :restraints-on nil)
 
-(cando:save-mol2 *agg* "/src/mc.mol2")
-
-(chem:save-mol2 *agg* "/src/mc-test.mol2")
+(cando:save-mol2 *agg* "macro1.mol2")
 
