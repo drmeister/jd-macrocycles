@@ -1,7 +1,6 @@
-# Macrocycles that JD is synthesizing or plans to synthesize
+#Macrocycles that JD is synthesizing or plans to synthesize
 
-
-## Directories
+##Directories
 
 synthesized - Compounds that JD has synthesized
 
