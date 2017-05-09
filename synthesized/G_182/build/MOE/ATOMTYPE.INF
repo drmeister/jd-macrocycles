@@ -1,0 +1,145 @@
+====================================================================================
+-------------------------------ring property (I)------------------------------------
+
+====================================================================================
+-------------------------------ring property (II)------------------------------------
+
+====================================================================================
+-------------------------------ring property (III)-----------------------------------
+atom[ 1] (C6  ) is not in any ring (nr[1]=1)
+atom[ 2] (C5  ) is not in any ring (nr[2]=1)
+atom[ 3] (C8  ) is not in any ring (nr[3]=1)
+atom[ 4] (O2  ) is not in any ring (nr[4]=1)
+atom[ 5] (N   ) is not in any ring (nr[5]=1)
+atom[ 6] (N1  ) is not in any ring (nr[6]=1)
+atom[ 7] (C1  ) is not in any ring (nr[7]=1)
+atom[ 8] (C2  ) is not in any ring (nr[8]=1)
+atom[ 9] (C7  ) is not in any ring (nr[9]=1)
+atom[10] (C   ) is not in any ring (nr[10]=1)
+atom[11] (C3  ) is not in any ring (nr[11]=1)
+atom[12] (O   ) is not in any ring (nr[12]=1)
+atom[13] (O1  ) is not in any ring (nr[13]=1)
+atom[14] (C4  ) is not in any ring (nr[14]=1)
+atom[15] (H1C4) is not in any ring (nr[15]=1)
+atom[16] (H2C4) is not in any ring (nr[16]=1)
+atom[17] (H3C4) is not in any ring (nr[17]=1)
+atom[18] (H1C3) is not in any ring (nr[18]=1)
+atom[19] (H2C3) is not in any ring (nr[19]=1)
+atom[20] (H1C7) is not in any ring (nr[20]=1)
+atom[21] (H2C7) is not in any ring (nr[21]=1)
+atom[22] (H1C2) is not in any ring (nr[22]=1)
+atom[23] (H2C2) is not in any ring (nr[23]=1)
+atom[24] (H1C1) is not in any ring (nr[24]=1)
+atom[25] (H2C1) is not in any ring (nr[25]=1)
+atom[26] (H1C8) is not in any ring (nr[26]=1)
+atom[27] (H1C6) is not in any ring (nr[27]=1)
+atom[28] (H2C6) is not in any ring (nr[28]=1)
+atom[29] (H3C6) is not in any ring (nr[29]=1)
+atom[30] (H2C8) is not in any ring (nr[30]=1)
+atom[31] (H3C8) is not in any ring (nr[31]=1)
+atom[32] (H3C7) is not in any ring (nr[32]=1)
+
+====================================================================================
+-------------------------------aromatic property------------------------------------
+
+====================================================================================
+-------------------------------electronic property----------------------------------
+atom [ 1] (C6  ) is not an electron-withdrew atom
+atom [ 2] (C5  ) is not an electron-withdrew atom
+atom [ 3] (C8  ) is not an electron-withdrew atom
+atom [ 4] (O2  ) is an electron-withdrew atom
+atom [ 5] (N   ) is an electron-withdrew atom
+atom [ 6] (N1  ) is an electron-withdrew atom
+atom [ 7] (C1  ) is not an electron-withdrew atom
+atom [ 8] (C2  ) is not an electron-withdrew atom
+atom [ 9] (C7  ) is not an electron-withdrew atom
+atom [10] (C   ) is not an electron-withdrew atom
+atom [11] (C3  ) is not an electron-withdrew atom
+atom [12] (O   ) is an electron-withdrew atom
+atom [13] (O1  ) is an electron-withdrew atom
+atom [14] (C4  ) is not an electron-withdrew atom
+atom [15] (H1C4) is not an electron-withdrew atom
+atom [16] (H2C4) is not an electron-withdrew atom
+atom [17] (H3C4) is not an electron-withdrew atom
+atom [18] (H1C3) is not an electron-withdrew atom
+atom [19] (H2C3) is not an electron-withdrew atom
+atom [20] (H1C7) is not an electron-withdrew atom
+atom [21] (H2C7) is not an electron-withdrew atom
+atom [22] (H1C2) is not an electron-withdrew atom
+atom [23] (H2C2) is not an electron-withdrew atom
+atom [24] (H1C1) is not an electron-withdrew atom
+atom [25] (H2C1) is not an electron-withdrew atom
+atom [26] (H1C8) is not an electron-withdrew atom
+atom [27] (H1C6) is not an electron-withdrew atom
+atom [28] (H2C6) is not an electron-withdrew atom
+atom [29] (H3C6) is not an electron-withdrew atom
+atom [30] (H2C8) is not an electron-withdrew atom
+atom [31] (H3C8) is not an electron-withdrew atom
+atom [32] (H3C7) is not an electron-withdrew atom
+
+====================================================================================
+--------------------------------connectivity property-------------------------------
+atom[ 1] (C6  )    27  H1C6
+atom[ 1] (C6  )     2    C5
+atom[ 1] (C6  )    28  H2C6
+atom[ 1] (C6  )    29  H3C6
+atom[ 2] (C5  )     1    C6
+atom[ 2] (C5  )     4    O2
+atom[ 2] (C5  )     5     N
+atom[ 3] (C8  )    26  H1C8
+atom[ 3] (C8  )     6    N1
+atom[ 3] (C8  )    30  H2C8
+atom[ 3] (C8  )    31  H3C8
+atom[ 4] (O2  )     2    C5
+atom[ 5] (N   )     2    C5
+atom[ 5] (N   )     7    C1
+atom[ 5] (N   )     8    C2
+atom[ 6] (N1  )     9    C7
+atom[ 6] (N1  )    10     C
+atom[ 6] (N1  )     3    C8
+atom[ 7] (C1  )     5     N
+atom[ 7] (C1  )    10     C
+atom[ 7] (C1  )    24  H1C1
+atom[ 7] (C1  )    25  H2C1
+atom[ 8] (C2  )     5     N
+atom[ 8] (C2  )    11    C3
+atom[ 8] (C2  )    22  H1C2
+atom[ 8] (C2  )    23  H2C2
+atom[ 9] (C7  )     6    N1
+atom[ 9] (C7  )    20  H1C7
+atom[ 9] (C7  )    21  H2C7
+atom[ 9] (C7  )    32  H3C7
+atom[10] (C   )     6    N1
+atom[10] (C   )     7    C1
+atom[10] (C   )    12     O
+atom[11] (C3  )     8    C2
+atom[11] (C3  )    13    O1
+atom[11] (C3  )    18  H1C3
+atom[11] (C3  )    19  H2C3
+atom[12] (O   )    10     C
+atom[13] (O1  )    11    C3
+atom[13] (O1  )    14    C4
+atom[14] (C4  )    13    O1
+atom[14] (C4  )    15  H1C4
+atom[14] (C4  )    16  H2C4
+atom[14] (C4  )    17  H3C4
+atom[15] (H1C4)    14    C4
+atom[16] (H2C4)    14    C4
+atom[17] (H3C4)    14    C4
+atom[18] (H1C3)    11    C3
+atom[19] (H2C3)    11    C3
+atom[20] (H1C7)     9    C7
+atom[21] (H2C7)     9    C7
+atom[22] (H1C2)     8    C2
+atom[23] (H2C2)     8    C2
+atom[24] (H1C1)     7    C1
+atom[25] (H2C1)     7    C1
+atom[26] (H1C8)     3    C8
+atom[27] (H1C6)     1    C6
+atom[28] (H2C6)     1    C6
+atom[29] (H3C6)     1    C6
+atom[30] (H2C8)     3    C8
+atom[31] (H3C8)     3    C8
+atom[32] (H3C7)     9    C7
+----------------------------------------END-----------------------------------------
+

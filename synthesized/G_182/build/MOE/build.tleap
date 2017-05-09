@@ -1,0 +1,12 @@
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff MOE.off
+G182 = sequence { MOE MOE }
+saveAmberParm G182 G182.prmtop G182.crd
+quit
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff MOE.off
+G182 = sequence { MOE MOE }
+saveAmberParm G182 G182.prmtop G182.crd
+quit
