@@ -9,9 +9,9 @@
 
 synthesized - Compounds that JD has synthesized
 
-	EAA-Trials-Spreadsheet - All data pertaining to enhanced proline couplings
-	EAA-Trials-chemdraw - Shows the coupling that was performed for the data in the spreadsheet
-	EAA-Scheme-Stocks - Shows the synthesis of the monomers and my current amino acid stock on hand
+	en-pro-trials-Spreadsheet - All data pertaining to enhanced proline couplings
+	en-pro-trials-chemdraw - Shows the coupling that was performed for the data in the spreadsheet
+	en-pro-Scheme-Stocks - Shows the synthesis of the monomers and my current amino acid stock on hand
 
 designs - Compounds that JD can synthesize
 
