@@ -12,6 +12,12 @@ synthesized - Compounds that JD has synthesized
 	en-pro-trials-Spreadsheet - All data pertaining to enhanced proline couplings
 	en-pro-trials-chemdraw - Shows the coupling that was performed for the data in the spreadsheet
 	en-pro-Scheme-Stocks - Shows the synthesis of the monomers and my current amino acid stock on hand
+	G_182 - tri-ep(meo)-tri-nmeg - shows NMR simplification with K-OTf addition
+	G_183 - tri-ep(varied)-tri-nmeg - shows NMR simplification with K-OTf addition
+	H_030 - tri-ep(bn)-tri-nmeg  - shows NMR simplification with K-OTf addition
+	H_031 - tri-ep(bn)-tri-nleu  - shows NMR simplification with K-OTf addition
+	H_032 - tri-ep(bn)-tri-leu	- does not show NMR simplification with K-OTf addition
+	H_035 - Alkylated H_032 with t-Bu Acetate, shows as single peak on LCMS
 
 designs - Compounds that JD can synthesize
 
