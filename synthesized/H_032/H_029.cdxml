@@ -2,8 +2,8 @@
 <!DOCTYPE CDXML SYSTEM "http://www.cambridgesoft.com/xml/cdxml.dtd" >
 <CDXML
  CreationProgram="ChemDraw 15.1.0.144"
- Name="H_029.cdx"
- BoundingBox="72.27 62.29 479.99 476.22"
+ Name="H_029.cdxml"
+ BoundingBox="72.27 62.30 479.99 476.22"
  WindowPosition="0 0"
  WindowSize="0 0"
  FractionalWidths="yes"
@@ -78,7 +78,7 @@
 </colortable><fonttable>
 <font id="21" charset="x-mac-roman" name="Helvetica"/>
 </fonttable><page
- id="2777"
+ id="2784"
  BoundingBox="0 0 540 720"
  HeaderPosition="36"
  FooterPosition="36"
@@ -87,11 +87,11 @@
  WidthPages="1"
 ><group
  id="2596"
- BoundingBox="72.27 62.29 479.99 444.72"
+ BoundingBox="72.27 62.30 479.99 444.71"
  Z="251"
 ><fragment
  id="2597"
- BoundingBox="72.27 62.29 479.99 444.72"
+ BoundingBox="72.27 62.30 479.99 444.71"
  Z="250"
 ><n
  id="2598"
@@ -169,7 +169,7 @@
  AS="N"
 ><t
  p="255.21 191.31"
- BoundingBox="255.21 176.03 269.06 191.66"
+ BoundingBox="255.21 176.03 269.05 191.66"
  LabelJustification="Left"
 ><s font="21" size="17.8" color="0" face="96">O</s></t></n><n
  id="2603"
@@ -196,8 +196,8 @@
  NeedsClean="yes"
  AS="N"
 ><t
- p="293.56 213.61"
- BoundingBox="293.56 198.32 307.40 213.96"
+ p="293.56 213.60"
+ BoundingBox="293.56 198.32 307.40 213.95"
  LabelJustification="Left"
 ><s font="21" size="17.8" color="0" face="96">O</s></t></n><n
  id="2605"
@@ -210,8 +210,8 @@
  NeedsClean="yes"
  AS="N"
 ><t
- p="280.82 235.80"
- BoundingBox="280.82 220.51 294.66 236.15"
+ p="280.82 235.79"
+ BoundingBox="280.82 220.51 294.66 236.14"
  LabelJustification="Left"
 ><s font="21" size="17.8" color="0" face="96">O</s></t></n><n
  id="2606"
@@ -224,8 +224,8 @@
  NeedsClean="yes"
  AS="N"
 ><t
- p="255.10 235.74"
- BoundingBox="255.10 220.45 268.94 236.09"
+ p="255.10 235.73"
+ BoundingBox="255.10 220.45 268.94 236.08"
  LabelJustification="Left"
 ><s font="21" size="17.8" color="0" face="96">O</s></t></n><n
  id="2607"
@@ -238,8 +238,8 @@
  NeedsClean="yes"
  AS="N"
 ><t
- p="242.35 213.50"
- BoundingBox="242.35 198.21 256.19 213.85"
+ p="242.35 213.49"
+ BoundingBox="242.35 198.21 256.19 213.84"
  LabelJustification="Left"
 ><s font="21" size="17.8" color="0" face="96">O</s></t></n><n
  id="2608"
@@ -284,8 +284,8 @@
  NeedsClean="yes"
  AS="N"
 ><t
- p="320.45 258.16"
- BoundingBox="320.45 243.28 346.15 258.16"
+ p="320.44 258.15"
+ BoundingBox="320.44 243.28 346.15 258.15"
  LabelJustification="Left"
  LabelAlignment="Left"
 ><s font="21" size="17.8" color="0" face="96">NH</s></t></n><n
@@ -316,7 +316,7 @@
  AS="N"
 ><t
  p="333.23 191.42"
- BoundingBox="333.23 176.55 346.08 191.42"
+ BoundingBox="333.23 176.55 346.09 191.42"
  LabelJustification="Left"
 ><s font="21" size="17.8" color="0" face="96">N</s></t></n><n
  id="2615"
@@ -333,7 +333,7 @@
  Name="stereo"
 ><t
  p="149.09 93.95"
- BoundingBox="149.09 82.58 166.82 96.65"
+ BoundingBox="149.09 82.57 166.82 96.65"
  Visible="no"
  CaptionLineHeight="variable"
 ><s font="21" size="13.3" color="0" face="2">(S)</s></t></objecttag></n><n
@@ -354,8 +354,8 @@
  NeedsClean="yes"
  AS="N"
 ><t
- p="282.18 146.94"
- BoundingBox="282.18 132.06 307.89 146.94"
+ p="282.17 146.93"
+ BoundingBox="282.17 132.06 307.88 146.93"
  LabelJustification="Left"
  LabelAlignment="Left"
 ><s font="21" size="17.8" color="0" face="96">NH</s></t></n><n
@@ -379,7 +379,7 @@
  AS="N"
 ><t
  p="256.10 280.29"
- BoundingBox="256.10 265.42 268.95 280.29"
+ BoundingBox="256.10 265.42 268.96 280.29"
  LabelJustification="Left"
 ><s font="21" size="17.8" color="0" face="96">N</s></t></n><n
  id="2620"
@@ -396,7 +396,7 @@
  Name="stereo"
 ><t
  p="156.83 165.12"
- BoundingBox="156.83 153.75 174.56 167.82"
+ BoundingBox="156.83 153.74 174.56 167.82"
  Visible="no"
  CaptionLineHeight="variable"
 ><s font="21" size="13.3" color="0" face="2">(S)</s></t></objecttag></n><n
@@ -453,7 +453,7 @@
  Name="stereo"
 ><t
  p="215.72 121.17"
- BoundingBox="215.72 109.80 233.44 123.87"
+ BoundingBox="215.72 109.79 233.45 123.87"
  Visible="no"
  CaptionLineHeight="variable"
 ><s font="21" size="13.3" color="0" face="2">(S)</s></t></objecttag></n><n
@@ -502,8 +502,8 @@
  NeedsClean="yes"
  AS="N"
 ><t
- p="152.11 127.12"
- BoundingBox="152.11 112.24 164.96 127.12"
+ p="152.11 127.11"
+ BoundingBox="152.11 112.24 164.97 127.11"
  LabelJustification="Left"
  LabelAlignment="Left"
 ><s font="21" size="17.8" color="0" face="96">N</s></t></n><n
@@ -525,7 +525,7 @@
  AS="N"
 ><t
  p="152.11 168.66"
- BoundingBox="152.11 153.79 164.96 183.54"
+ BoundingBox="152.11 153.79 164.97 183.54"
  LabelJustification="Left"
  LabelAlignment="Below"
  LineStarts="2 3"
@@ -548,7 +548,7 @@
  AS="N"
 ><t
  p="401.52 151.52"
- BoundingBox="401.52 136.64 414.38 151.52"
+ BoundingBox="401.52 136.65 414.38 151.52"
  LabelJustification="Left"
  LabelAlignment="Left"
 ><s font="21" size="17.8" color="0" face="96">N</s></t></n><n
@@ -569,8 +569,8 @@
  NeedsClean="yes"
  AS="N"
 ><t
- p="373.43 135.20"
- BoundingBox="347.73 120.33 373.43 135.20"
+ p="373.44 135.20"
+ BoundingBox="347.73 120.33 373.44 135.20"
  LabelJustification="Right"
  Justification="Right"
  LabelAlignment="Right"
@@ -592,8 +592,8 @@
  NeedsClean="yes"
  AS="N"
 ><t
- p="256.09 359.38"
- BoundingBox="256.09 344.50 268.94 359.38"
+ p="256.09 359.37"
+ BoundingBox="256.09 344.50 268.95 359.37"
  LabelJustification="Left"
  LabelAlignment="Right"
 ><s font="21" size="17.8" color="0" face="96">N</s></t></n><n
@@ -614,8 +614,8 @@
  NeedsClean="yes"
  AS="N"
 ><t
- p="289.65 334.97"
- BoundingBox="289.65 320.09 315.36 334.97"
+ p="289.65 334.96"
+ BoundingBox="289.65 320.09 315.36 334.96"
  LabelJustification="Left"
  LabelAlignment="Left"
 ><s font="21" size="17.8" color="0" face="96">NH</s></t></n><n
@@ -630,7 +630,7 @@
  AS="N"
 ><t
  p="110.69 148.48"
- BoundingBox="110.69 133.20 124.54 148.83"
+ BoundingBox="110.69 133.20 124.53 148.83"
  LabelJustification="Left"
 ><s font="21" size="17.8" color="0" face="96">O</s></t></n><n
  id="2642"
@@ -671,8 +671,8 @@
  NeedsClean="yes"
  AS="N"
 ><t
- p="389.20 195.91"
- BoundingBox="389.20 180.63 403.05 196.26"
+ p="389.21 195.91"
+ BoundingBox="389.21 180.63 403.05 196.26"
  LabelJustification="Left"
 ><s font="21" size="17.8" color="0" face="96">O</s></t></n><n
  id="2645"
@@ -685,8 +685,8 @@
  NeedsClean="yes"
  AS="N"
 ><t
- p="222.49 327.09"
- BoundingBox="222.49 311.80 236.34 327.44"
+ p="222.49 327.08"
+ BoundingBox="222.49 311.80 236.33 327.43"
  LabelJustification="Left"
 ><s font="21" size="17.8" color="0" face="96">O</s></t></n><n
  id="2646"
@@ -2097,7 +2097,7 @@
 /></fragment></group><t
  id="2773"
  p="276.13 461.02"
- BoundingBox="200.28 452.33 351.97 476.22"
+ BoundingBox="200.29 452.33 351.97 476.22"
  Z="360"
  InterpretChemically="no"
  CaptionJustification="Center"
