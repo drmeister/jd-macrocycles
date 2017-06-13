@@ -1,0 +1,46 @@
+python: can't open file '/home/tug27224/research/repos/voelzlab/custom_topologies/scripts/Allsteps_VAV.py': [Errno 2] No such file or directory
+-I: Adding /home/tud67309/local/amber11/dat/leap/prep to search path.
+-I: Adding /home/tud67309/local/amber11/dat/leap/lib to search path.
+-I: Adding /home/tud67309/local/amber11/dat/leap/parm to search path.
+-I: Adding /home/tud67309/local/amber11/dat/leap/cmd to search path.
+-f: Source build.tleap.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./build.tleap
+----- Source: /home/tud67309/local/amber11/dat/leap/cmd/leaprc.gaff
+----- Source of /home/tud67309/local/amber11/dat/leap/cmd/leaprc.gaff done
+Log file: ./leap.log
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+Loading library: ./MOE.off
+Loading library: ./EPR.off
+Checking Unit.
+WARNING: There is a bond of 9.119089 angstroms between: 
+-------  .R<MOE 1>.A<N 5> and .R<EPR 6>.A<C 13>
+
+ -- ignoring the warning.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 45 improper torsions applied
+Building H-Bond parameters.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+	Quit
+===============================================================================================
+| ACPYPE: AnteChamber PYthon Parser interfacE v. 2011-03-31 14:17:10Z Rev: 365 (c) 2011 AWSdS |
+===============================================================================================
+Converting Amber input files to Gromacs ...
+==> Writing GROMACS files
+
+Total time of execution: less than a second

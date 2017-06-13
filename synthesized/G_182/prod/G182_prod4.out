@@ -1,0 +1,25 @@
+----------------------------------------
+Begin Batch Job Prologue Fri Jun  9 17:18:39 EST 2017
+Job ID:           729561.owlsnest1.nfs
+Username:         tug27224
+Group:            stdchem
+Job Name:         G182_prod4.pf
+Resources List:   neednodes=1:ppn=12,nodes=1:ppn=12,walltime=12:00:00
+Queue:            normal
+Account:          
+Nodes:            w003 
+End Batch Job Prologue Fri Jun  9 17:18:39 EST 2017
+----------------------------------------
+----------------------------------------
+Begin Batch Job Epilogue Sat Jun 10 01:35:41 EST 2017
+Job ID:           729561.owlsnest1.nfs
+Username:         tug27224
+Group:            stdchem
+Job Name:         G182_prod4.pf
+Session:          15376
+Limits:           neednodes=1:ppn=12,nodes=1:ppn=12,walltime=12:00:00
+Resources:        cput=99:19:21,mem=182580kb,vmem=26981920kb,walltime=08:17:02
+Queue:            normal
+Account:          
+End Batch Job Epilogue Sat Jun 10 01:36:01 EST 2017
+----------------------------------------

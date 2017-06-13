@@ -1,0 +1,26 @@
+----------------------------------------
+Begin Batch Job Prologue Sun Jun 11 19:04:03 EST 2017
+Job ID:           729772.owlsnest1.nfs
+Username:         tug27224
+Group:            stdchem
+Job Name:         G182_prod6.pf
+Resources List:   neednodes=1:ppn=12,nodes=1:ppn=12,walltime=12:00:00
+Queue:            normal
+Account:          
+Nodes:            w001 
+End Batch Job Prologue Sun Jun 11 19:04:03 EST 2017
+----------------------------------------
+12 total processes killed (some possibly by mpirun during cleanup)
+----------------------------------------
+Begin Batch Job Epilogue Mon Jun 12 07:04:24 EST 2017
+Job ID:           729772.owlsnest1.nfs
+Username:         tug27224
+Group:            stdchem
+Job Name:         G182_prod6.pf
+Session:          10106
+Limits:           neednodes=1:ppn=12,nodes=1:ppn=12,walltime=12:00:00
+Resources:        cput=143:59:20,mem=183440kb,vmem=26982572kb,walltime=12:00:21
+Queue:            normal
+Account:          
+End Batch Job Epilogue Mon Jun 12 07:04:44 EST 2017
+----------------------------------------
