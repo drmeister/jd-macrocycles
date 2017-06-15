@@ -1,0 +1,25 @@
+----------------------------------------
+Begin Batch Job Prologue Sun Jun 11 19:19:38 EST 2017
+Job ID:           729776.owlsnest1.nfs
+Username:         tug27224
+Group:            stdchem
+Job Name:         G183_ions.pf
+Resources List:   neednodes=1:ppn=12,nodes=1:ppn=12,walltime=12:00:00
+Queue:            normal
+Account:          
+Nodes:            w028 
+End Batch Job Prologue Sun Jun 11 19:19:38 EST 2017
+----------------------------------------
+----------------------------------------
+Begin Batch Job Epilogue Mon Jun 12 01:55:41 EST 2017
+Job ID:           729776.owlsnest1.nfs
+Username:         tug27224
+Group:            stdchem
+Job Name:         G183_ions.pf
+Session:          9181
+Limits:           neednodes=1:ppn=12,nodes=1:ppn=12,walltime=12:00:00
+Resources:        cput=79:06:32,mem=179848kb,vmem=26978252kb,walltime=06:36:03
+Queue:            normal
+Account:          
+End Batch Job Epilogue Mon Jun 12 01:56:01 EST 2017
+----------------------------------------
