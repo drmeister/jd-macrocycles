@@ -1,0 +1,56 @@
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff NIB.off
+loadoff EPR.off
+H045 = sequence { NIB EPR NIB EPR NIB EPR }
+bond H045.1.N H045.6.C
+saveAmberParm H045 H045.prmtop H045.crd
+quit
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff NIB.off
+loadoff EPR.off
+H045 = sequence { NIB EPR NIB EPR NIB EPR }
+bond H045.1.N H045.6.C
+saveAmberParm H045 H045.prmtop H045.crd
+quit
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff NIB.off
+loadoff EPR.off
+H045 = sequence { NIB EPR NIB EPR NIB EPR }
+bond H045.1.N H045.6.C
+saveAmberParm H045 H045.prmtop H045.crd
+quit
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff NIB.off
+loadoff EPR.off
+H045 = sequence { NIB EPR NIB EPR NIB EPR }
+bond H045.1.N H045.6.C
+saveAmberParm H045 H045.prmtop H045.crd
+quit
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff NIB.off
+loadoff EPR.off
+H045 = sequence { NIB EPR NIB EPR NIB EPR }
+bond H045.1.N H045.6.C
+saveAmberParm H045 H045.prmtop H045.crd
+quit
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff NIB.off
+loadoff EPR.off
+H045 = sequence { NIB EPR NIB EPR NIB EPR }
+bond H045.1.N H045.6.C
+saveAmberParm H045 H045.prmtop H045.crd
+quit
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff NIB.off
+loadoff EPR.off
+H045 = sequence { NIB EPR NIB EPR NIB EPR }
+bond H045.1.N H045.6.C
+saveAmberParm H045 H045.prmtop H045.crd
+quit

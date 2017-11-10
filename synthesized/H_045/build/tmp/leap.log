@@ -1,0 +1,4230 @@
+log started: Thu Oct 26 15:08:36 2017
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff.dat
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+(UNKNOWN ATOM TYPE: cz)
+> 
+> gaff = loadamberparams gaff.dat
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+(UNKNOWN ATOM TYPE: cz)
+> loadoff NIB.off
+Loading library: ./NIB.off
+Loading: NIB
+Loading: modsDLM
+Loading: modsNIB
+> loadoff EPR.off
+Loading library: ./EPR.off
+Loading: EPR
+Loading: modsDLM
+Loading: modsEPR
+> H045 = sequence { NIB EPR NIB EPR NIB EPR }
+Sequence: NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+Sequence: NIB
+failed to find default bond length N-C, types n-C.2
+Joining EPR - NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+Sequence: NIB
+failed to find default bond length N-C, types n-C.2
+Joining EPR - NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+> bond H045.1.N H045.6.C
+> saveAmberParm H045 H045.prmtop H045.crd
+Checking Unit.
+WARNING: There is a bond of 6.050733 angstroms between: 
+-------  .R<NIB 1>.A<N 7> and .R<EPR 6>.A<C 4>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 1>.A<C 4> and .R<EPR 2>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 2>.A<C10 23> and .R<EPR 2>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 2>.A<C5 14> and .R<EPR 2>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 2>.A<C2 8> and .R<EPR 2>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 2>.A<C 4> and .R<NIB 3>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 3>.A<C 4> and .R<EPR 4>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 4>.A<C10 23> and .R<EPR 4>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 4>.A<C5 14> and .R<EPR 4>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 4>.A<C2 8> and .R<EPR 4>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 4>.A<C 4> and .R<NIB 5>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 5>.A<C 4> and .R<EPR 6>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 6>.A<C10 23> and .R<EPR 6>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 6>.A<C5 14> and .R<EPR 6>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 6>.A<C2 8> and .R<EPR 6>.A<C3 11>
+
+ -- ignoring the warnings.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Could not find bond parameter for: n - C.2
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Building angle parameters.
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: n - C.2 - C.3
+Could not find angle parameter: n - C.2 - O.2
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.2 - C.3 - N.am
+Building proper torsion parameters.
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  n-C.2-C.3-H
+ ** No torsion terms for  n-C.2-C.3-N.am
+ ** No torsion terms for  n-C.2-C.3-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+Building improper torsion parameters.
+ total 6 improper torsions applied
+Building H-Bond parameters.
+Parameter file was not saved.
+> quit
+	Quit
+log started: Thu Nov  2 20:37:25 2017
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff.dat
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+(UNKNOWN ATOM TYPE: cz)
+> 
+> gaff = loadamberparams gaff.dat
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+(UNKNOWN ATOM TYPE: cz)
+> loadoff NIB.off
+Loading library: ./NIB.off
+Loading: NIB
+Loading: modsDLM
+Loading: modsNIB
+> loadoff EPR.off
+Loading library: ./EPR.off
+Loading: EPR
+Loading: modsDLM
+Loading: modsEPR
+> H045 = sequence { NIB EPR NIB EPR NIB EPR }
+Sequence: NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+Sequence: NIB
+failed to find default bond length N-C, types n-C.2
+Joining EPR - NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+Sequence: NIB
+failed to find default bond length N-C, types n-C.2
+Joining EPR - NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+> bond H045.1.N H045.6.C
+> saveAmberParm H045 H045.prmtop H045.crd
+Checking Unit.
+WARNING: There is a bond of 6.050733 angstroms between: 
+-------  .R<NIB 1>.A<N 7> and .R<EPR 6>.A<C 4>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 1>.A<C 4> and .R<EPR 2>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 2>.A<C10 23> and .R<EPR 2>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 2>.A<C5 14> and .R<EPR 2>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 2>.A<C2 8> and .R<EPR 2>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 2>.A<C 4> and .R<NIB 3>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 3>.A<C 4> and .R<EPR 4>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 4>.A<C10 23> and .R<EPR 4>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 4>.A<C5 14> and .R<EPR 4>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 4>.A<C2 8> and .R<EPR 4>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 4>.A<C 4> and .R<NIB 5>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 5>.A<C 4> and .R<EPR 6>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 6>.A<C10 23> and .R<EPR 6>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 6>.A<C5 14> and .R<EPR 6>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 6>.A<C2 8> and .R<EPR 6>.A<C3 11>
+
+ -- ignoring the warnings.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Could not find bond parameter for: n - C.2
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Building angle parameters.
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: n - C.2 - C.3
+Could not find angle parameter: n - C.2 - O.2
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.2 - C.3 - N.am
+Building proper torsion parameters.
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  n-C.2-C.3-H
+ ** No torsion terms for  n-C.2-C.3-N.am
+ ** No torsion terms for  n-C.2-C.3-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+Building improper torsion parameters.
+ total 6 improper torsions applied
+Building H-Bond parameters.
+Parameter file was not saved.
+> quit
+	Quit
+log started: Fri Nov  3 09:36:13 2017
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff.dat
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+(UNKNOWN ATOM TYPE: cz)
+> 
+> gaff = loadamberparams gaff.dat
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+(UNKNOWN ATOM TYPE: cz)
+> loadoff NIB.off
+Loading library: ./NIB.off
+Loading: NIB
+Loading: modsDLM
+Loading: modsNIB
+> loadoff EPR.off
+Loading library: ./EPR.off
+Loading: EPR
+Loading: modsDLM
+Loading: modsEPR
+> H045 = sequence { NIB EPR NIB EPR NIB EPR }
+Sequence: NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+Sequence: NIB
+failed to find default bond length N-C, types n-C.2
+Joining EPR - NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+Sequence: NIB
+failed to find default bond length N-C, types n-C.2
+Joining EPR - NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+> bond H045.1.N H045.6.C
+> saveAmberParm H045 H045.prmtop H045.crd
+Checking Unit.
+WARNING: There is a bond of 6.050733 angstroms between: 
+-------  .R<NIB 1>.A<N 7> and .R<EPR 6>.A<C 4>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 1>.A<C 4> and .R<EPR 2>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 2>.A<C10 23> and .R<EPR 2>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 2>.A<C5 14> and .R<EPR 2>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 2>.A<C2 8> and .R<EPR 2>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 2>.A<C 4> and .R<NIB 3>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 3>.A<C 4> and .R<EPR 4>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 4>.A<C10 23> and .R<EPR 4>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 4>.A<C5 14> and .R<EPR 4>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 4>.A<C2 8> and .R<EPR 4>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 4>.A<C 4> and .R<NIB 5>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 5>.A<C 4> and .R<EPR 6>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 6>.A<C10 23> and .R<EPR 6>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 6>.A<C5 14> and .R<EPR 6>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 6>.A<C2 8> and .R<EPR 6>.A<C3 11>
+
+ -- ignoring the warnings.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Could not find bond parameter for: n - C.2
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Building angle parameters.
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: n - C.2 - C.3
+Could not find angle parameter: n - C.2 - O.2
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.2 - C.3 - N.am
+Building proper torsion parameters.
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  n-C.2-C.3-H
+ ** No torsion terms for  n-C.2-C.3-N.am
+ ** No torsion terms for  n-C.2-C.3-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+Building improper torsion parameters.
+ total 6 improper torsions applied
+Building H-Bond parameters.
+Parameter file was not saved.
+> quit
+	Quit
+log started: Fri Nov  3 21:17:39 2017
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff.dat
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+(UNKNOWN ATOM TYPE: cz)
+> 
+> gaff = loadamberparams gaff.dat
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+(UNKNOWN ATOM TYPE: cz)
+> loadoff NIB.off
+Loading library: ./NIB.off
+Loading: NIB
+Loading: modsDLM
+Loading: modsNIB
+> loadoff EPR.off
+Loading library: ./EPR.off
+Loading: EPR
+Loading: modsDLM
+Loading: modsEPR
+> H045 = sequence { NIB EPR NIB EPR NIB EPR }
+Sequence: NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+Sequence: NIB
+failed to find default bond length N-C, types n-C.2
+Joining EPR - NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+Sequence: NIB
+failed to find default bond length N-C, types n-C.2
+Joining EPR - NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+> bond H045.1.N H045.6.C
+> saveAmberParm H045 H045.prmtop H045.crd
+Checking Unit.
+WARNING: There is a bond of 6.050733 angstroms between: 
+-------  .R<NIB 1>.A<N 7> and .R<EPR 6>.A<C 4>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 1>.A<C 4> and .R<EPR 2>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 2>.A<C10 23> and .R<EPR 2>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 2>.A<C5 14> and .R<EPR 2>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 2>.A<C2 8> and .R<EPR 2>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 2>.A<C 4> and .R<NIB 3>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 3>.A<C 4> and .R<EPR 4>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 4>.A<C10 23> and .R<EPR 4>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 4>.A<C5 14> and .R<EPR 4>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 4>.A<C2 8> and .R<EPR 4>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 4>.A<C 4> and .R<NIB 5>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 5>.A<C 4> and .R<EPR 6>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 6>.A<C10 23> and .R<EPR 6>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 6>.A<C5 14> and .R<EPR 6>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 6>.A<C2 8> and .R<EPR 6>.A<C3 11>
+
+ -- ignoring the warnings.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Could not find bond parameter for: n - C.2
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Building angle parameters.
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: n - C.2 - C.3
+Could not find angle parameter: n - C.2 - O.2
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.2 - C.3 - N.am
+Building proper torsion parameters.
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  n-C.2-C.3-H
+ ** No torsion terms for  n-C.2-C.3-N.am
+ ** No torsion terms for  n-C.2-C.3-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+Building improper torsion parameters.
+ total 6 improper torsions applied
+Building H-Bond parameters.
+Parameter file was not saved.
+> quit
+	Quit
+log started: Fri Nov  3 21:17:53 2017
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff.dat
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+(UNKNOWN ATOM TYPE: cz)
+> 
+> gaff = loadamberparams gaff.dat
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+(UNKNOWN ATOM TYPE: cz)
+> loadoff NIB.off
+Loading library: ./NIB.off
+Loading: NIB
+Loading: modsDLM
+Loading: modsNIB
+> loadoff EPR.off
+Loading library: ./EPR.off
+Loading: EPR
+Loading: modsDLM
+Loading: modsEPR
+> H045 = sequence { NIB EPR NIB EPR NIB EPR }
+Sequence: NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+Sequence: NIB
+failed to find default bond length N-C, types n-C.2
+Joining EPR - NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+Sequence: NIB
+failed to find default bond length N-C, types n-C.2
+Joining EPR - NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+> bond H045.1.N H045.6.C
+> saveAmberParm H045 H045.prmtop H045.crd
+Checking Unit.
+WARNING: There is a bond of 6.050733 angstroms between: 
+-------  .R<NIB 1>.A<N 7> and .R<EPR 6>.A<C 4>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 1>.A<C 4> and .R<EPR 2>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 2>.A<C10 23> and .R<EPR 2>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 2>.A<C5 14> and .R<EPR 2>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 2>.A<C2 8> and .R<EPR 2>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 2>.A<C 4> and .R<NIB 3>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 3>.A<C 4> and .R<EPR 4>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 4>.A<C10 23> and .R<EPR 4>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 4>.A<C5 14> and .R<EPR 4>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 4>.A<C2 8> and .R<EPR 4>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 4>.A<C 4> and .R<NIB 5>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 5>.A<C 4> and .R<EPR 6>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 6>.A<C10 23> and .R<EPR 6>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 6>.A<C5 14> and .R<EPR 6>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 6>.A<C2 8> and .R<EPR 6>.A<C3 11>
+
+ -- ignoring the warnings.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Could not find bond parameter for: n - C.2
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Building angle parameters.
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: n - C.2 - C.3
+Could not find angle parameter: n - C.2 - O.2
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.2 - C.3 - N.am
+Building proper torsion parameters.
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  n-C.2-C.3-H
+ ** No torsion terms for  n-C.2-C.3-N.am
+ ** No torsion terms for  n-C.2-C.3-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+Building improper torsion parameters.
+ total 6 improper torsions applied
+Building H-Bond parameters.
+Parameter file was not saved.
+> quit
+	Quit
+log started: Fri Nov 10 12:56:46 2017
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff.dat
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+(UNKNOWN ATOM TYPE: cz)
+> 
+> gaff = loadamberparams gaff.dat
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+(UNKNOWN ATOM TYPE: cz)
+> loadoff NIB.off
+Loading library: ./NIB.off
+Loading: NIB
+Loading: modsDLM
+Loading: modsNIB
+> loadoff EPR.off
+Loading library: ./EPR.off
+Loading: EPR
+Loading: modsDLM
+Loading: modsEPR
+> H045 = sequence { NIB EPR NIB EPR NIB EPR }
+Sequence: NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+Sequence: NIB
+failed to find default bond length N-C, types n-C.2
+Joining EPR - NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+Sequence: NIB
+failed to find default bond length N-C, types n-C.2
+Joining EPR - NIB
+Sequence: EPR
+failed to find default bond length N-C, types N.am-c
+Joining NIB - EPR
+> bond H045.1.N H045.6.C
+> saveAmberParm H045 H045.prmtop H045.crd
+Checking Unit.
+WARNING: There is a bond of 6.050733 angstroms between: 
+-------  .R<NIB 1>.A<N 7> and .R<EPR 6>.A<C 4>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 1>.A<C 4> and .R<EPR 2>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 2>.A<C10 23> and .R<EPR 2>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 2>.A<C5 14> and .R<EPR 2>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 2>.A<C2 8> and .R<EPR 2>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 2>.A<C 4> and .R<NIB 3>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 3>.A<C 4> and .R<EPR 4>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 4>.A<C10 23> and .R<EPR 4>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 4>.A<C5 14> and .R<EPR 4>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 4>.A<C2 8> and .R<EPR 4>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 4>.A<C 4> and .R<NIB 5>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 5>.A<C 4> and .R<EPR 6>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 6>.A<C10 23> and .R<EPR 6>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 6>.A<C5 14> and .R<EPR 6>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 6>.A<C2 8> and .R<EPR 6>.A<C3 11>
+
+ -- ignoring the warnings.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Could not find bond parameter for: n - C.2
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Building angle parameters.
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: n - C.2 - C.3
+Could not find angle parameter: n - C.2 - O.2
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.2 - C.3 - N.am
+Building proper torsion parameters.
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  n-C.2-C.3-H
+ ** No torsion terms for  n-C.2-C.3-N.am
+ ** No torsion terms for  n-C.2-C.3-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+Building improper torsion parameters.
+ total 6 improper torsions applied
+Building H-Bond parameters.
+Parameter file was not saved.
+> quit
+	Quit

@@ -1,0 +1,1723 @@
+mkdir: cannot create directory `tmp': File exists
+-I: Adding /home/tud67309/local/amber11/dat/leap/prep to search path.
+-I: Adding /home/tud67309/local/amber11/dat/leap/lib to search path.
+-I: Adding /home/tud67309/local/amber11/dat/leap/parm to search path.
+-I: Adding /home/tud67309/local/amber11/dat/leap/cmd to search path.
+-f: Source build.tleap.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./build.tleap
+----- Source: /home/tud67309/local/amber11/dat/leap/cmd/leaprc.gaff
+----- Source of /home/tud67309/local/amber11/dat/leap/cmd/leaprc.gaff done
+Log file: ./leap.log
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+Loading library: ./NIB.off
+Loading library: ./EPR.off
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C12-C11-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C10-C11-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C13-C12-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C9-C10-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C8-C9-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C8-C13-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C7-C8-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C7-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C6-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C6-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
+failed to find default bond length N-C, types N.am-c
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-N-*
++--- With Sp2 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-N-*
++--- With Sp2 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C6-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C6-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C6-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C7-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C7-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C6-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C6-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C7-C8-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
+failed to find default bond length N-C, types n-C.2
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C-*
++--- With Sp2 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C-*
++--- With Sp2 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C12-C11-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C10-C11-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C13-C12-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C9-C10-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C8-C9-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C8-C13-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C7-C8-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C7-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C6-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C6-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
+failed to find default bond length N-C, types N.am-c
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-N-*
++--- With Sp2 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-N-*
++--- With Sp2 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C6-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C6-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C6-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C7-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C7-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C6-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C6-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C7-C8-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
+failed to find default bond length N-C, types n-C.2
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C-*
++--- With Sp2 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C-*
++--- With Sp2 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C12-C11-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C10-C11-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C13-C12-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C9-C10-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C8-C9-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C8-C13-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C7-C8-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C7-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C6-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C6-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
+failed to find default bond length N-C, types N.am-c
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-N-*
++--- With Sp2 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-N-*
++--- With Sp2 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-C-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C1-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C6-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-N-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C4-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C2-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C6-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-C4-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C3-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C6-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C7-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C5-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N2-C7-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-N1-C6-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C6-N1-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C7-C8-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-C3-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
++Currently only Sp3-Sp3/Sp3-Sp2/Sp2-Sp2 are supported
++---Tried to superimpose torsions for: *-C5-N2-*
++--- With Sp0 - Sp0
++--- Sp0 probably means a new atom type is involved
++--- which needs to be added via addAtomTypes
+Checking Unit.
+WARNING: There is a bond of 6.050733 angstroms between: 
+-------  .R<NIB 1>.A<N 7> and .R<EPR 6>.A<C 4>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 1>.A<C 4> and .R<EPR 2>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 2>.A<C10 23> and .R<EPR 2>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 2>.A<C5 14> and .R<EPR 2>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 2>.A<C2 8> and .R<EPR 2>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 2>.A<C 4> and .R<NIB 3>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 3>.A<C 4> and .R<EPR 4>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 4>.A<C10 23> and .R<EPR 4>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 4>.A<C5 14> and .R<EPR 4>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 4>.A<C2 8> and .R<EPR 4>.A<C3 11>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<EPR 4>.A<C 4> and .R<NIB 5>.A<N 7>
+WARNING: There is a bond of 0.000000 angstroms between: 
+-------  .R<NIB 5>.A<C 4> and .R<EPR 6>.A<N 7>
+WARNING: There is a bond of 3.518319 angstroms between: 
+-------  .R<EPR 6>.A<C10 23> and .R<EPR 6>.A<C11 25>
+WARNING: There is a bond of 3.833188 angstroms between: 
+-------  .R<EPR 6>.A<C5 14> and .R<EPR 6>.A<N2 17>
+WARNING: There is a bond of 3.927410 angstroms between: 
+-------  .R<EPR 6>.A<C2 8> and .R<EPR 6>.A<C3 11>
+
+ -- ignoring the warnings.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Could not find bond parameter for: n - C.2
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.2 - n
+Could not find bond parameter for: c - N.am
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - H
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - C.2
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: C.2 - N.am
+Could not find bond parameter for: N.am - C.2
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Could not find bond parameter for: C.3 - C.3
+Building angle parameters.
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: n - C.2 - C.3
+Could not find angle parameter: n - C.2 - O.2
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: c3 - n - C.2
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.2 - n
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: O.2 - C.2 - n
+Could not find angle parameter: C.2 - C.3 - N.am
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: C.2 - n - c3
+Could not find angle parameter: c3 - c - N.am
+Could not find angle parameter: o - c - N.am
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: c - N.am - C.3
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.2 - C.2 - C.2
+Could not find angle parameter: C.2 - C.2 - H
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: C.3 - C.2 - C.2
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.2 - N.am - H
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: C.2 - N.am - C.2
+Could not find angle parameter: C.2 - N.am - C.3
+Could not find angle parameter: N.am - C.3 - C.2
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - N.am - C.2
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - N.am
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: N.am - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - C.3
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.3 - C.3 - H
+Could not find angle parameter: C.2 - C.3 - N.am
+Building proper torsion parameters.
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  n-C.2-C.3-H
+ ** No torsion terms for  n-C.2-C.3-N.am
+ ** No torsion terms for  n-C.2-C.3-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-n-C.2-C.3
+ ** No torsion terms for  c3-n-C.2-O.2
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.2-n
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-C.2-n
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.2-n
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-C.2-n-c3
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  O.2-C.2-n-c3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  c3-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  o-c-N.am-C.3
+ ** No torsion terms for  c-N.am-C.3-C.2
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-C.3
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  c-N.am-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.3-C.3-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  H-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.3-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.2-C.2-C.2-C.2
+ ** No torsion terms for  C.2-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  C.3-C.2-C.2-C.2
+ ** No torsion terms for  C.3-C.2-C.2-H
+ ** No torsion terms for  O.2-C.2-N.am-H
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  N.am-C.2-N.am-H
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  N.am-C.3-C.2-C.2
+ ** No torsion terms for  O.2-C.2-N.am-C.3
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-N.am-C.2
+ ** No torsion terms for  C.2-C.3-N.am-H
+ ** No torsion terms for  C.2-N.am-C.2-O.2
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-H
+ ** No torsion terms for  C.2-N.am-C.3-C.2
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.2-N.am
+ ** No torsion terms for  N.am-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.2-N.am-C.2
+ ** No torsion terms for  N.am-C.2-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-N.am-C.2-N.am
+ ** No torsion terms for  C.3-N.am-C.2-O.2
+ ** No torsion terms for  C.3-C.2-N.am-C.2
+ ** No torsion terms for  C.3-C.2-N.am-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  C.3-C.3-N.am-C.3
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-H
+ ** No torsion terms for  C.3-C.3-N.am-C.2
+ ** No torsion terms for  C.3-C.3-N.am-H
+ ** No torsion terms for  C.3-C.3-C.2-N.am
+ ** No torsion terms for  C.3-C.3-C.2-O.2
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-H
+ ** No torsion terms for  N.am-C.3-C.3-C.3
+ ** No torsion terms for  N.am-C.3-C.3-N.am
+ ** No torsion terms for  N.am-C.3-C.3-C.2
+ ** No torsion terms for  C.3-N.am-C.3-C.3
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-N.am-C.3-H
+ ** No torsion terms for  C.3-C.3-C.3-C.3
+ ** No torsion terms for  C.3-C.3-C.3-N.am
+ ** No torsion terms for  C.3-C.3-C.3-C.2
+ ** No torsion terms for  O.2-C.2-C.3-H
+ ** No torsion terms for  O.2-C.2-C.3-N.am
+ ** No torsion terms for  O.2-C.2-C.3-C.3
+ ** No torsion terms for  C.2-C.3-N.am-C.3
+ ** No torsion terms for  C.2-C.3-C.3-C.3
+ ** No torsion terms for  C.2-C.3-C.3-H
+ ** No torsion terms for  C.2-C.3-C.3-H
+Building improper torsion parameters.
+ total 6 improper torsions applied
+Building H-Bond parameters.
+Parameter file was not saved.
+	Quit
+===============================================================================================
+| ACPYPE: AnteChamber PYthon Parser interfacE v. 2011-03-31 14:17:10Z Rev: 365 (c) 2011 AWSdS |
+===============================================================================================
+Converting Amber input files to Gromacs ...
+ACPYPE FAILED: PRMTOP file empty?
+Total time of execution: less than a second

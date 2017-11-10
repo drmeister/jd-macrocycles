@@ -1,0 +1,203 @@
+Building from file NIB.mol2 ...
+>> antechamber -i NIB.mol2 -fi mol2 -o NIB.preedit.mol2 -fo mol2 -at gaff -nc 0 -j 5 -c bcc
+
+
+Total number of electrons: 110; net charge: 0
+
+Running: /home/tud67309/local/amber11/bin/sqm -O -i sqm.in -o sqm.out
+
+
+Changing C6      charge from     0.6651 to     0.0000
+Changing C7      charge from    -0.1681 to     0.0000
+Changing H71     charge from     0.0677 to     0.0000
+Changing H72     charge from     0.0607 to     0.0000
+Changing H73     charge from     0.0757 to     0.0000
+Changing O1      charge from    -0.6151 to     0.0000
+Changing N1      charge from    -0.4768 to     0.0000
+Changing C8      charge from     0.0783 to     0.0000
+Changing H81     charge from     0.0497 to     0.0000
+Changing H82     charge from     0.0367 to     0.0000
+Changing H83     charge from     0.0357 to     0.0000
+Changing C9      charge from     0.0763 to     0.0000
+Changing H91     charge from     0.0797 to     0.0000
+Changing H92     charge from     0.0277 to     0.0000
+Changing H93     charge from     0.0317 to     0.0000
+net charge after zeroing capped residues:-0.025000
+included_indices [3, 4, 5, 6, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25]
+excluded_indices [0, 1, 2, 7, 9, 10, 21, 26, 27, 28, 29, 30, 31, 32, 33]
+total_included_charge -0.025
+net charge after shifting to net charge:0.000000
+Writing to NIB.edited.mol2
+...Done.
+*** Make sure the @<TRIPOS>MOLECULE header is correct -- MUST CHANGE THIS BY HAND!! ****    
+@<TRIPOS>MOLECULE
+NIL
+   34    33     1     0     0
+SMALL
+bcc
+@<TRIPOS>ATOM
+      1 C8        159.3630  120.2310   -0.4630 c3        1 NIL      0.000000 
+      2 N1        157.9000  120.1680   -0.2930 n         1 NIL      0.000000 
+      3 C9        157.3700  118.9460   -0.9320 c3        1 NIL      0.000000 
+      4 C         157.1200  121.0710    0.3590 c         1 NIL      0.637416 
+      5 O         155.9200  120.9030    0.4330 o         1 NIL     -0.610784 
+      6 C1        157.7730  122.2790    1.0200 c3        1 NIL      0.028316 
+      7 N         157.1930  123.5560    0.5510 n         1 NIL     -0.459484 
+      8 C6        155.9760  124.0000    0.9950 c         1 NIL      0.000000 
+      9 C2        158.0320  124.1950   -0.4920 c3        1 NIL      0.092316 
+     10 C7        155.3040  125.1850    0.2980 c3        1 NIL      0.000000 
+     11 O1        155.4340  123.4680    1.9450 o         1 NIL      0.000000 
+     12 C3        159.0090  125.2700    0.0560 c3        1 NIL     -0.085384 
+     13 C4        159.4290  126.2110   -1.0920 c3        1 NIL     -0.091784 
+     14 C5        160.2560  124.6600    0.7350 c3        1 NIL     -0.088784 
+     15 H51       159.9730  124.0700    1.6090 hc        1 NIL      0.038016 
+     16 H52       160.9210  125.4560    1.0840 hc        1 NIL      0.038016 
+     17 H53       160.8130  124.0250    0.0420 hc        1 NIL      0.035016 
+     18 H41       160.1090  126.9860   -0.7300 hc        1 NIL      0.040016 
+     19 H42       158.5520  126.7040   -1.5200 hc        1 NIL      0.035016 
+     20 H43       159.9300  125.6520   -1.8860 hc        1 NIL      0.041016 
+     21 H31       158.4980  125.8670    0.8110 hc        1 NIL      0.051016 
+     22 H71       155.5760  125.1780   -0.7570 hc        1 NIL      0.000000 
+     23 H21       157.3930  124.6470   -1.2510 h1        1 NIL      0.051016 
+     24 H22       158.6110  123.4280   -1.0180 h1        1 NIL      0.076016 
+     25 H11       157.6170  122.1820    2.0970 h1        1 NIL      0.103016 
+     26 H12       158.8480  122.2700    0.8410 h1        1 NIL      0.070016 
+     27 H91       156.5350  119.2060   -1.5850 h1        1 NIL      0.000000 
+     28 H82       159.8620  120.3730    0.5000 h1        1 NIL      0.000000 
+     29 H83       159.5930  121.0720   -1.1230 h1        1 NIL      0.000000 
+     30 H81       159.7140  119.3060   -0.9200 h1        1 NIL      0.000000 
+     31 H92       157.0270  118.2540   -0.1630 h1        1 NIL      0.000000 
+     32 H93       158.1570  118.4730   -1.5200 h1        1 NIL      0.000000 
+     33 H72       155.6400  126.1160    0.7550 hc        1 NIL      0.000000 
+     34 H73       154.2220  125.1000    0.3960 hc        1 NIL      0.000000 
+@<TRIPOS>BOND
+     1    1   28 1   
+     2    1   29 1   
+     3    2    1 1   
+     4    2    3 1   
+     5    3   27 1   
+     6    4    2 1   
+     7    5    4 2   
+     8    6    7 1   
+     9    6    4 1   
+    10    6   25 1   
+    11    6   26 1   
+    12    7    8 1   
+    13    8   10 1   
+    14    9    7 1   
+    15    9   23 1   
+    16    9   24 1   
+    17   10   22 1   
+    18   11    8 2   
+    19   12    9 1   
+    20   12   21 1   
+    21   13   12 1   
+    22   13   18 1   
+    23   13   19 1   
+    24   13   20 1   
+    25   14   12 1   
+    26   14   15 1   
+    27   14   16 1   
+    28   14   17 1   
+    29   30    1 1   
+    30   31    3 1   
+    31   32    3 1   
+    32   33   10 1   
+    33   34   10 1   
+@<TRIPOS>SUBSTRUCTURE
+     1 NIL         1 TEMP              0 ****  ****    0 ROOT
+
+>> parmchk -i NIB.edited.mol2 -f mol2 -o NIB.edited.mol2.frcmod -p $AMBERHOME/dat/leap/parm/gaff.dat
+### THE leapscript ###
+modsNIB = loadAmberParams NIB.edited.mol2.frcmod
+modsDLM = loadAmberParams dlm_edit.frcmod
+source leaprc.ff99SB
+
+NIB = loadMol2 NIB.edited.mol2
+
+# Delete N-terminal acetyl and C-terminal dimethyl amine group
+remove NIB NIB.1.8  # C6
+remove NIB NIB.1.10  # C7
+remove NIB NIB.1.22  # H71
+remove NIB NIB.1.33  # H72
+remove NIB NIB.1.34  # H73
+remove NIB NIB.1.11  # O1
+remove NIB NIB.1.2  # N1
+remove NIB NIB.1.1  # C8
+remove NIB NIB.1.30  # H81
+remove NIB NIB.1.28  # H82
+remove NIB NIB.1.29  # H83
+remove NIB NIB.1.3  # C9
+remove NIB NIB.1.27  # H91
+remove NIB NIB.1.31  # H92
+remove NIB NIB.1.32  # H93
+
+# Should still be net neutral -- all removed atoms shoulve have had charge 0.0
+
+set NIB name "NIB"
+set NIB.1 name "NIB"
+
+# Define head atom
+set NIB head NIB.1.7
+set NIB.1 connect0 NIB.1.7
+
+# Define tail atom
+set NIB tail NIB.1.4
+set NIB.1 connect1 NIB.1.4
+
+savepdb NIB NIB.pdb
+
+
+# Make a list of info needed for the library
+# This is necessary in order to make sure the parameter modifications are stored to the off file.
+myresidue = { NIB modsNIB modsDLM }
+saveoff myresidue NIB.off
+
+quit
+
+### -------------- ###
+-I: Adding /home/tud67309/local/amber11/dat/leap/prep to search path.
+-I: Adding /home/tud67309/local/amber11/dat/leap/lib to search path.
+-I: Adding /home/tud67309/local/amber11/dat/leap/parm to search path.
+-I: Adding /home/tud67309/local/amber11/dat/leap/cmd to search path.
+-f: Source /tmp/tmp2Db0BG.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: /tmp/tmp2Db0BG
+Loading parameters: ./NIB.edited.mol2.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+remark goes here
+Loading parameters: ./dlm_edit.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+remark goes here - Originally created by DLM, VAV edited to mix-n-match AMBER (uppercase) and GAFF (lowercase) atomtypes
+No mass defined for non-bond atom type: CA - skipping
+No mass defined for non-bond atom type: C - skipping
+No mass defined for non-bond atom type: CT - skipping
+No mass defined for non-bond atom type: O - skipping
+No mass defined for non-bond atom type: HA - skipping
+No mass defined for non-bond atom type: HC - skipping
+----- Source: /home/tud67309/local/amber11/dat/leap/cmd/leaprc.ff99SB
+----- Source of /home/tud67309/local/amber11/dat/leap/cmd/leaprc.ff99SB done
+Log file: ./leap.log
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/parm99.dat
+Reading title:
+PARM99 for DNA,RNA,AA, organic molecules, TIP3P wat. Polariz.& LP incl.02/04/99
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/frcmod.ff99SB
+Reading force field modification type file (frcmod)
+Reading title:
+Modification/update of parm99.dat (Hornak & Simmerling)
+Loading library: /home/tud67309/local/amber11/dat/leap/lib/all_nucleic94.lib
+Loading library: /home/tud67309/local/amber11/dat/leap/lib/all_amino94.lib
+Loading library: /home/tud67309/local/amber11/dat/leap/lib/all_aminoct94.lib
+Loading library: /home/tud67309/local/amber11/dat/leap/lib/all_aminont94.lib
+Loading library: /home/tud67309/local/amber11/dat/leap/lib/ions94.lib
+Loading library: /home/tud67309/local/amber11/dat/leap/lib/solvents.lib
+Loading Mol2 file: ./NIB.edited.mol2
+Reading MOLECULE named NIL
+Writing pdb file: NIB.pdb
+Building topology.
+Building atom parameters.
+	Quit

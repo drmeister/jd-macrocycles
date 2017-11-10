@@ -1,0 +1,102 @@
+            --------------------------------------------------------
+                             AMBER SQM VERSION 1.4
+ 
+                                     By
+              Ross C. Walker, Michael F. Crowley, Scott Brozell,
+                Tim Giese, Andreas W. Goetz and David A. Case
+ 
+            --------------------------------------------------------
+ 
+
+--------------------------------------------------------------------------------
+  QM CALCULATION INFO
+--------------------------------------------------------------------------------
+
+| QMMM: Citation for AMBER QMMM Run:
+| QMMM: R.C. Walker, M.F. Crowley and D.A. Case, J. COMP. CHEM. 29:1019, 2008
+
+QMMM: SINGLET STATE CALCULATION
+QMMM: RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS = 69
+
+| QMMM: *** Selected Hamiltonian *** 
+| QMMM: AM1         
+
+| QMMM: *** Parameter sets in use ***
+| QMMM: C : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+| QMMM: N : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+| QMMM: O : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+| QMMM: H : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+
+| QMMM: *** SCF convergence criteria ***
+| QMMM: Energy change                :  0.1D-09 kcal/mol
+| QMMM: Error matrix |FP-PF|         :  0.1D+00 au
+| QMMM: Density matrix change        :  0.1D-09
+| QMMM: Maximum number of SCF cycles :     1000
+
+| QMMM: *** Diagonalization Routine Information ***
+| QMMM: Pseudo diagonalizations are allowed.
+| QMMM: Auto diagonalization routine selection is disabled.
+| QMMM: Using internal diagonalization routine (diag_routine=1).
+
+  QMMM: QM Region Cartesian Coordinates (*=link atom) 
+  QMMM: QM_NO.   MM_NO.  ATOM         X         Y         Z
+  QMMM:     1        1      C      126.3360   72.3480   -1.3600
+  QMMM:     2        2      N      126.4300   72.6230    0.1010
+  QMMM:     3        3      C      125.0770   72.8430    0.7080
+  QMMM:     4        4      C      127.6300   72.7010    0.7810
+  QMMM:     5        5      O      127.6760   72.4430    1.9650
+  QMMM:     6        6      C      128.9780   73.1110    0.1310
+  QMMM:     7        7      N      129.0060   73.5500   -1.2820
+  QMMM:     8        8      C      129.5890   74.3110    0.8960
+  QMMM:     9        9      C      129.3340   72.8200   -2.3850
+  QMMM:    10       10      C      128.8090   75.0030   -1.3230
+  QMMM:    11       11      C      129.3190   75.5470    0.0170
+  QMMM:    12       12      O      129.2310   73.2900   -3.5010
+  QMMM:    13       13      N      130.4680   76.4240   -0.1490
+  QMMM:    14       14      C      128.3440   76.5320    0.6140
+  QMMM:    15       15      C      130.2030   77.7040    0.1550
+  QMMM:    16       16      O      127.2190   76.2800    1.0010
+  QMMM:    17       17      N      128.9330   77.7520    0.6260
+  QMMM:    18       18      O      130.9750   78.6330    0.0190
+  QMMM:    19       19      C      128.2480   78.9910    1.0330
+  QMMM:    20       20      C      129.0360   79.8580    1.9960
+  QMMM:    21       21      C      129.3410   81.1210    1.6760
+  QMMM:    22       22      C      129.4420   79.3730    3.1750
+  QMMM:    23       23      C      130.0370   81.8860    2.5180
+  QMMM:    24       24      C      130.1390   80.1360    4.0180
+  QMMM:    25       25      C      130.4360   81.3940    3.6910
+  QMMM:    26       26      H        0.0010   82.0190    4.3780
+  QMMM:    27       27      H        0.4670   79.7310    4.9730
+  QMMM:    28       28      H        0.2770   82.9100    2.2460
+  QMMM:    29       29      H        0.2070   78.3480    3.4530
+  QMMM:    30       30      H      129.0240   81.5320    0.7200
+  QMMM:    31       31      H      127.2930   78.7390    1.5010
+  QMMM:    32       32      H      128.0240   79.5570    0.1240
+  QMMM:    33       33      H      127.7450   75.2160   -1.4510
+  QMMM:    34       34      H      129.3660   75.4460   -2.1530
+  QMMM:    35       35      H      129.1960   74.4330    1.9080
+  QMMM:    36       36      H      130.6660   74.1550    0.9830
+  QMMM:    37       37      H      129.6450   72.2570    0.2680
+  QMMM:    38       38      H        0.4220   72.0210    0.4250
+  QMMM:    39       39      H        0.6860   73.7430    0.2240
+  QMMM:    40       40      H        0.7670   73.1970   -1.8820
+  QMMM:    41       41      H      131.3410   76.1070   -0.5430
+  QMMM:    42       42      H        0.8900   71.4420   -1.6040
+  QMMM:    43       43      H        0.2910   72.2300   -1.6470
+  QMMM:    44       44      H        0.1340   72.9590    1.7900
+  QMMM:    45       45      C      129.8380   71.3910   -2.2160
+  QMMM:    46       46      H      130.0500   70.9620   -3.1960
+  QMMM:    47       47      H      129.0760   70.7940   -1.7160
+  QMMM:    48       48      H        0.7480   71.3950   -1.6160
+
+--------------------------------------------------------------------------------
+  RESULTS
+--------------------------------------------------------------------------------
+
+
+QMMM: ERROR!
+QMMM: Unable to achieve self consistency to the tolerances specified
+QMMM: No convergence in SCF after   1000 steps.
+QMMM: E =  -0.7517E+06 DeltaE =  -0.5222E+02 DeltaP =   0.4578E+00
+QMMM: Smallest DeltaE =   0.6048E-02 DeltaP =   0.6309E+00 Step =    789
+

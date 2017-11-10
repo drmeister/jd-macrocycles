@@ -1,0 +1,57 @@
+remark goes here
+MASS
+C.3 0.000         0.000               ATTN, need revision
+N.am 0.000         0.000               ATTN, need revision
+C.2 0.000         0.000               ATTN, need revision
+O.2 0.000         0.000               ATTN, need revision
+H  1.008         0.161               same as hn 
+
+BOND
+C.3-N.am    0.00   0.000       ATTN, need revision
+C.3-H     0.00   0.000       ATTN, need revision
+C.2-O.2    0.00   0.000       ATTN, need revision
+C.2-C.3    0.00   0.000       ATTN, need revision
+N.am-H     0.00   0.000       ATTN, need revision
+
+ANGLE
+C.3-N.am-C.3    0.000       0.000   ATTN, need revision
+N.am-C.3-H     0.000       0.000   ATTN, need revision
+N.am-C.2-O.2    0.000       0.000   ATTN, need revision
+N.am-C.2-C.3    0.000       0.000   ATTN, need revision
+C.2-C.3-C.3    0.000       0.000   ATTN, need revision
+C.2-C.3-H     0.000       0.000   ATTN, need revision
+O.2-C.2-C.3    0.000       0.000   ATTN, need revision
+C.3-N.am-H     0.000       0.000   ATTN, need revision
+O.2-C.2-H     0.000       0.000   ATTN, need revision
+N.am-C.2-N.am    0.000       0.000   ATTN, need revision
+H -C.3-H     0.000       0.000   ATTN, need revision
+
+DIHE
+C.3-N.am-C.3-H    1    0.000         0.000           0.000      ATTN, need revision
+C.3-N.am-C.2-O.2   1    0.000         0.000           0.000      ATTN, need revision
+C.3-N.am-C.2-C.3   1    0.000         0.000           0.000      ATTN, need revision
+N.am-C.2-C.3-N.am   1    0.000         0.000           0.000      ATTN, need revision
+N.am-C.2-C.3-C.3   1    0.000         0.000           0.000      ATTN, need revision
+N.am-C.2-C.3-H    1    0.000         0.000           0.000      ATTN, need revision
+C.2-C.3-C.3-C.3   1    0.000         0.000           0.000      ATTN, need revision
+C.2-C.3-C.3-H    1    0.000         0.000           0.000      ATTN, need revision
+O.2-C.2-C.3-N.am   1    0.000         0.000           0.000      ATTN, need revision
+O.2-C.2-C.3-C.3   1    0.000         0.000           0.000      ATTN, need revision
+O.2-C.2-C.3-H    1    0.000         0.000           0.000      ATTN, need revision
+C.3-C.3-N.am-H    1    0.000         0.000           0.000      ATTN, need revision
+C.3-N.am-C.2-N.am   1    0.000         0.000           0.000      ATTN, need revision
+N.am-C.2-N.am-H    1    0.000         0.000           0.000      ATTN, need revision
+O.2-C.2-N.am-H    1    0.000         0.000           0.000      ATTN, need revision
+H -C.2-C.2-H    1    0.000         0.000           0.000      ATTN, need revision
+
+IMPROPER
+
+NONBON
+  C.3          0.0000  0.0000             ATTN, need revision
+  N.am          0.0000  0.0000             ATTN, need revision
+  C.2          0.0000  0.0000             ATTN, need revision
+  O.2          0.0000  0.0000             ATTN, need revision
+  H           0.6000  0.0157             same as hn 
+
+
+
